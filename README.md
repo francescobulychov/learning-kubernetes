@@ -4,6 +4,8 @@ This repository is dedicated to learning and experimenting with Kubernetes. It i
 
 ## Overloaded App
 
+![Untitled-2025-01-10-1603](https://github.com/user-attachments/assets/5431cf2e-bc1b-4d08-9e53-1fa5dc5242d1)
+
 The Overloaded App is a simple Flask application designed to help experiment with the capabilities of Kubernetes. The app features a load generator that intentionally overloads the Flask application, allowing you to observe how Kubernetes dynamically scales the number of Pods up or down based on resource usage, thanks to the HorizontalPodAutoscaler.
 
 Both the Flask app and the load generator are public Docker images hosted on my Docker Hub, making it easy to pull and deploy them.
