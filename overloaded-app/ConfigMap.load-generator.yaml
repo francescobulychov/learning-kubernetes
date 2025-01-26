@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: load-generator-env
+data:
+  TARGET_URL: "http://flask-app-service:8080"
+  DELAY: "0.3"

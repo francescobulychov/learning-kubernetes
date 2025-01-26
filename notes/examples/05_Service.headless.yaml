@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: headless-nginxs # it sets up DNS for each replica in the StatefulSet (stateful-nginx-0.headless-nginxs.default.svc.cluster.local)
+spec:
+  type: ClusterIP
+  clusterIP: None # "headless" service
+  selector:
+    app: stateful-nginx
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
